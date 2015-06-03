@@ -1,0 +1,131 @@
+/* Circle slide *DONE* */
+
+nav.aanwrap a {
+	position: fixed;
+	top: 50%;
+	display: block;
+	outline: none;
+	text-align: left;
+	z-index: 1000;
+  overflow:hidden;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+  margin: 0 20px;
+  width: 62px;
+  height: 62px;
+  border-radius: 40px;
+  -webkit-transition: width 0.3s, background-color 0.3s;
+  transition: width 0.3s, background-color 0.3s;
+	font-size:15px;
+	text-decoration: none;
+}
+
+nav.aanwrap a.aan_prev {
+	left: 0;
+}
+
+nav.aanwrap a.aan_next {
+	right: 0;
+}
+
+nav.aanwrap a.aan_next .icon-wrap {
+  right:0;
+  }
+
+
+nav.aanwrap .aan_arrowicon {
+	font-size:20px;
+	}
+
+nav.aanwrap .icon-wrap {
+  background:none!important;
+	position: absolute;
+	width: 30px;
+  text-align:center;
+	padding: 15px 0;
+}
+
+nav.aanwrap a.aan_prev .icon-wrap {
+	left: 15px;
+}
+
+nav.aanwrap a.aan_next .icon-wrap {
+	right: 15px;
+}
+
+nav.aanwrap a.aan_next h3 {
+  margin-left:70px;
+  text-align:right;
+	margin-top:22px;
+}
+
+nav.aanwrap a.aan_prev h3{
+	margin-left: 10px;
+	margin-top:22px;
+}
+
+nav.aanwrap h3 {
+  overflow: hidden;
+  width:377px;
+  white-space: nowrap;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 1em;
+
+  }
+
+nav.aanwrap .aan_prevtitle, nav.aanwrap .aan_nexttitle {display:none;}
+
+nav.aanwrap div {
+  width: 463px;
+	position: absolute;
+	top: 0;
+	margin: 0;
+	text-transform: uppercase;
+	opacity: 0;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+}
+
+
+nav.aanwrap a.aan_next h3 div {
+	right: 38px;
+	-webkit-transform: translateX(100%);
+	transform: translateX(100%);
+}
+
+nav.aanwrap a.aan_prev div {
+	left: 38px;
+	-webkit-transform: translateX(-100%);
+	transform: translateX(-100%);
+}
+
+nav.aanwrap a:hover {
+	width: 500px;
+
+}
+
+nav.aanwrap a:hover div {
+	opacity: 1;
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+}
+
+.aanwrap img {
+	position: absolute;
+	top: 0;
+	height: 100%;
+  height:62px;
+  width:62px;
+  border-radius:50%;
+}
+
+.aanwrap a.aan_prev img {
+	right: 0;
+}
+
+.aanwrap a.aan_next img {
+	left: 0;
+}
